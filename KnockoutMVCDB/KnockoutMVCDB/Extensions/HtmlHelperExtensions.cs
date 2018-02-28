@@ -5,8 +5,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace KnockoutMVCDB.Extensions
-{
+
     public static class HtmlHelperExtensions
     {
         public static HtmlString HtmlConvertToJson(this HtmlHelper htmlHelper, object model)
@@ -20,4 +19,3 @@ namespace KnockoutMVCDB.Extensions
             return new HtmlString(JsonConvert.SerializeObject(model, settings));
         }
     }
-}
